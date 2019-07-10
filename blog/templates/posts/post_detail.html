@@ -1,0 +1,8 @@
+{% extends 'posts/base.html' %}
+{% block content %}
+	<h1>{{ post.title }}</h1>
+	{% if post.image %}
+	<img src="http://localhost:8000/{{ post.image.url }}" alt="my image">
+	{% endif %}
+	<p>{{ post.description }}</p>
+{% endblock %}
